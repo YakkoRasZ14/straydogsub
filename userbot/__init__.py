@@ -8,7 +8,7 @@ from pylast import LastFMNetwork, md5
 from distutils.util import strtobool as sb
 from logging import basicConfig, getLogger, INFO, DEBUG
 from sys import version_info
-import os
+import os, time
 
 load_dotenv("config.env")
 
