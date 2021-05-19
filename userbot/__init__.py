@@ -1,14 +1,14 @@
 # Import all the necessary packages
-import os
-import time
-from platform import node
 from telethon.sessions import StringSession
 from telethon import TelegramClient
+from requests import get
 from dotenv import load_dotenv
-from logging import getLogger, basicConfig, DEBUG, INFO
-from sys import version_info
+from pySmartDL import SmartDL
+from pylast import LastFMNetwork, md5
 from distutils.util import strtobool as sb
-from platform import uname
+from logging import basicConfig, getLogger, INFO, DEBUG
+from sys import version_info
+import os
 
 load_dotenv("config.env")
 
