@@ -8,7 +8,7 @@ from random import choice, randint
 from telethon.events import StopPropagation
 
 from userbot import (
-    ISAFK, #pylint:disable=E0602
+    ISAFK,  # pylint:disable=E0602
     AFKREASON,
     CMD_HELP,
     BOTLOG,
