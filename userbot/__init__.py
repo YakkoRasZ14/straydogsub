@@ -47,7 +47,7 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-API_KEY = os.environ.get("API_ID") or None
+API_KEY = os.environ.get("API_KEY") or None
 API_HASH = os.environ.get("API_HASH") or None
 
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
