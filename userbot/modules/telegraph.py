@@ -1,7 +1,7 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
-#Thanks to Raphielscap's Paperplane for this feature
+# Thanks to Raphielscap's Paperplane for this feature
 
-#import necessary packages to make sure this module works perfectly
+# import necessary packages to make sure this module works perfectly
 import os
 from PIL import Image
 from datetime import datetime

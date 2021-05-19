@@ -1,11 +1,14 @@
-#import necessary modules to work
+# import necessary modules to work
 from userbot import ALIVE_LOGO, bot, CMD_HELP, ALIVE_NAME, Up_Time, bot_version, GITHUB_REPO, GITHUB_LINK
 from userbot.events import register
 from platform import python_version
 from telethon import version
 import time
 
-#Thanks to Thunderuserbot for this code, https://github/Thundergang/Thunderuserbot.
+# Thanks to Thunderuserbot for this code,
+# https://github/Thundergang/Thunderuserbot.
+
+
 def get_readable_time(seconds: int) -> str:
     count = 0
     ping_time = ""
@@ -33,10 +36,11 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+
 @register(outgoing=True, pattern=r"^.(alive|on)$")
 async def amireallyalive(alive):
-    #This is to make sure .alive command works perfectly
-    UpTime = get_readable_time((time.time()-Up_Time))
+    # This is to make sure .alive command works perfectly
+    UpTime = get_readable_time((time.time() - Up_Time))
     output = (
         f"**✨ Hey there I'm `{ALIVE_NAME}` ✨**\n"
         "`No system is Safe!`\n"
@@ -49,7 +53,7 @@ async def amireallyalive(alive):
         f"**Bot Repo** 🔗: [Repo]({GITHUB_REPO})\n\n"
         f"**Bot Uptime**: `{UpTime}`\n"
     )
-    
+
     if ALIVE_LOGO:
         logo = ALIVE_LOGO
         await bot.send_file(alive.chat_id, logo, caption=output)
@@ -57,10 +61,9 @@ async def amireallyalive(alive):
     else:
         await alive.edit(output)
 
-        
+
 CMD_HELP.update({
-    "alive" :
+    "alive":
     ".alive|.on"
     "\n Usage: Come on, type .alive/on in any chat to check this Userbot is online or not"
 })
-

@@ -177,7 +177,7 @@ async def upstream(event):
     if changelog == '' and force_update is False:
         await event.edit(
             f'\n`Your USERBOT is`  **up-to-date**  `with`  **{UPSTREAM_REPO_BRANCH}**\n'
-            )
+        )
         return repo.__del__()
 
     if conf is None and force_update is False:

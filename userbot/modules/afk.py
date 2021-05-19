@@ -8,7 +8,6 @@ from random import choice, randint
 from telethon.events import StopPropagation
 
 from userbot import (
-    ISAFK,
     AFKREASON,
     CMD_HELP,
     BOTLOG,
@@ -22,8 +21,7 @@ AFKSTR = [
     "Would ya spend your time with someone",
     "My god, i don't know how to respond you right now, so i'll text you later",
     "Don't you have any other work to do?",
-    "Keep your A$$ shut while i'm afk"
-]
+    "Keep your A$$ shut while i'm afk"]
 
 global USER_AFK
 global afk_time

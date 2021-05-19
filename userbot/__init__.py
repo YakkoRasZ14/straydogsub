@@ -1,8 +1,9 @@
 # Import all the necessary packages
-import os, time
-from platform import node 
+import os
+import time
+from platform import node
 from telethon.sessions import StringSession
-from telethon import TelegramClient 
+from telethon import TelegramClient
 from dotenv import load_dotenv
 from logging import getLogger, basicConfig, DEBUG, INFO
 from sys import version_info
@@ -14,7 +15,7 @@ load_dotenv("config.env")
 Up_Time = time.time()
 bot_version = "1.0b"
 
-#Setting up bot log things
+# Setting up bot log things
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get(
     "CONSOLE_LOGGER_VERBOSE") or "False")
 
@@ -29,7 +30,7 @@ else:
         level=INFO)
 LOGS = getLogger(__name__)
 
-#Checking for new python version
+# Checking for new python version
 if version_info[0] < 3 or version_info[1] < 9:
     LOGS.info(
         "It seems you have python version below than 3.9,"
@@ -51,7 +52,8 @@ API_HASH = os.environ.get("API_HASH") or None
 
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
 
-ALIVE_LOGO = os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/a7d9ae50487b75a4fd672.jpg"
+ALIVE_LOGO = os.environ.get(
+    "ALIVE_LOGO") or "https://telegra.ph/file/a7d9ae50487b75a4fd672.jpg"
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or uname().node
 
 BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID") or 0
@@ -63,11 +65,13 @@ else:
     LOGSPAMMER = False
 
 U_GITHUB_LINK = os.environ.get("U_GITHUB_LINK") or None
-GITHUB_LINK = os.environ.get("O_GITHUB_LINK") or "https://github.com/jokerhacker22/"
+GITHUB_LINK = os.environ.get(
+    "O_GITHUB_LINK") or "https://github.com/jokerhacker22/"
 
 GITHUB_REPO = os.environ.get("GITHUB_REPO") or "https://github.com/MrRobot22/"
 
-TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
+TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
+    "TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN")) or False
 DB_URI = os.environ.get("DB_URI") or None

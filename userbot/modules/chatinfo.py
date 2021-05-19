@@ -139,7 +139,7 @@ async def fetch_info(chat, event):
     creator_username = "@{}".format(
         creator_username) if creator_username else None
     # end of spaghetti block
-    
+
     if admins is None:
         # use this alternative way if chat.full_chat.admins_count is None,
         # works even without being an admin

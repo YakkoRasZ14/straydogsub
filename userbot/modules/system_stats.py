@@ -7,12 +7,11 @@
 
 from asyncio import create_subprocess_exec as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
-from platform import python_version, uname
+from platform import uname
 from shutil import which
 from os import remove
-from telethon import version
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, UPSTREAM_REPO_BRANCH, bot, USERBOT_VERSION
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -126,7 +125,6 @@ async def pipcheck(pip):
                                "`\n**Result: **\n`No Result Returned/False`")
         else:
             await pip.edit("`Use .help pip to see an example`")
-
 
 
 @register(outgoing=True, pattern="^.aliveu")

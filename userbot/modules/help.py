@@ -1,6 +1,7 @@
-#Import all the ncessary pakcages needed
+# Import all the ncessary pakcages needed
 from userbot import CMD_HELP
 from userbot.events import register
+
 
 @register(outgoing=True, pattern="^.help(?: |$)(.*)")
 async def help(event):
@@ -17,5 +18,5 @@ async def help(event):
             string += "`\n"
         await event.edit(f"{string}"
                          "\n\nPlease specify which module you want help for"
-                         "\n Usage:.help <Module> \n\n Like `.help alive`"   
-        )
+                         "\n Usage:.help <Module> \n\n Like `.help alive`"
+                         )

@@ -1,4 +1,4 @@
-#Import all the necessary packages to make sure this module works fine
+# Import all the necessary packages to make sure this module works fine
 from asyncio import sleep
 from telethon.errors import rpcbaseerrors
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
