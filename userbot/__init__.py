@@ -103,6 +103,10 @@ G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET") or None
 G_DRIVE_AUTH_TOKEN_DATA = os.environ.get("G_DRIVE_AUTH_TOKEN_DATA") or None
 G_DRIVE_FOLDER_ID = os.environ.get("G_DRIVE_FOLDER_ID") or None
 
+UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
+                     or "https://github.com/MrRobot222/TESLA.git")
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "devil"
+
 
 if not os.path.exists("bin"):
     os.mkdir("bin")
