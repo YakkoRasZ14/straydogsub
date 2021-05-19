@@ -71,10 +71,6 @@ RUN git clone https://github.com/MrRobot222/TESLA/ /root/TESLA
 RUN mkdir /root/TESLA/bin/
 WORKDIR /root/TESLA/
 
-#
-# Copies session and config (if it exists)
-#
-COPY ./sample_config.env ./userbot.session* ./config.env* /root/userbot/
 
 #
 # Install requirements
