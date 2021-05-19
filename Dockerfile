@@ -72,8 +72,8 @@ RUN python3 -m ensurepip \
 # Clone repo and prepare working directory
 #
 RUN git clone https://github.com/jokerhacker22/straydogsub/ /root/straydogs
-RUN mkdir /root/StrayDogs/bin/
-WORKDIR /root/StrayDogs/
+RUN mkdir /root/straydogs/bin/
+WORKDIR /root/straydogs/
 
 
 #
