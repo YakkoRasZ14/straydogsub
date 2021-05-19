@@ -1,16 +1,15 @@
-FROM ubuntu:20.04
+FROM alpine:edge
 
-LABEL maintainer="jokerhacker.6521@pm.me"
-LABEL version="0.1"
-LABEL description="This is custom Docker Image for \
-the User Bot."
+#
+# We have to uncomment Community repo for some packages
+#
+RUN sed -e 's;^#http\(.*\)/edge/community;http\1/edge/community;g' -i /etc/apk/repositories
+RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
 
-ARG DEBIAN_FRONTEND=noninteractive
-# Update
-RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get clean
-
-# install the packages and libraries
-RUN apt-get install -y \
+#
+# Installing Packages
+#
+RUN apk add --no-cache=true --update \
     coreutils \
     bash \
     build-base \
