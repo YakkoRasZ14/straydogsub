@@ -69,20 +69,53 @@ GITHUB_LINK = os.environ.get(
     "O_GITHUB_LINK") or "https://github.com/jokerhacker22/"
 
 GITHUB_REPO = os.environ.get("GITHUB_REPO") or "https://github.com/MrRobot22/"
-GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN")
-
+GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN") or None
+GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME") or None
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN")) or False
 DB_URI = os.environ.get("DATABASE_URL") or None
 
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO")
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or None
 
-HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
-HEROKU_MEMEZ = os.environ.get("HEROKU_MEMEZ")
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY") or None
+HEROKU_MEMEZ = os.environ.get("HEROKU_MEMEZ") or None
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME") or None
 
+GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN") or None
+CHROME_DRIVER = os.environ.get("CHROME_DRIVER") or None
+
+USER_TERM_ALIAS = os.environ.get("USER_TERM_ALIAS") or "root@Fsociety"
+
+ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY") or "./zips"
+CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME") or "True")
+
+BIO_PREFIX = os.environ.get("BIO_PREFIX") or None
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or None
+
+ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT") or "False")
+ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
+
+G_DRIVE_DATA = os.environ.get("G_DRIVE_DATA") or None
+G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID") or None
+G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET") or None
+G_DRIVE_AUTH_TOKEN_DATA = os.environ.get("G_DRIVE_AUTH_TOKEN_DATA") or None
+G_DRIVE_FOLDER_ID = os.environ.get("G_DRIVE_FOLDER_ID") or None
+
+
+if not os.path.exists("bin"):
+    os.mkdir("bin")
+
+binaries = {
+    "https://raw.githubusercontent.com/adekmaulana/megadown/master/megadown": "bin/megadown",
+    "https://raw.githubusercontent.com/yshalsager/cmrudl.py/master/cmrudl.py": "bin/cmrudl",
+}
+
+for binary, path in binaries.items():
+    downloader = SmartDL(binary, path, progress_bar=False)
+    downloader.start()
+    os.chmod(path, 0o755)
 if STRING_SESSION:
     bot = TelegramClient(StringSession(str(STRING_SESSION)), API_KEY, API_HASH)
 else:
