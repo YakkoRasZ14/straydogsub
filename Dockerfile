@@ -1,13 +1,15 @@
-FROM kalilinux:kali-linux-docker
+FROM Ubuntu:20.4
+
+LABEL maintainer="jokerhacker.6521@pm.me"
+LABEL version="0.1"
+LABEL description="This is custom Docker Image for \
+the User Bot."
 
 ARG DEBIAN_FRONTEND=noninteractive
 # Update
 RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get clean
 
-# Install ZSH shell with custom settings and set it as default shell
-RUN apt-get -y install git zsh && wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-COPY config/.zshrc /root/.zshrc
-
+# install the packages and libraries
 RUN apt-get install -y \
     coreutils \
     bash \
@@ -53,11 +55,7 @@ RUN apt-get install -y \
     zip \
     megatools \
     nodejs \
-    freetype-dev \
-    nmap
-
-RUN apt-get -y install vim kali-linux-top10 net-tools whois netcat exploitdb man-db dirb nikto wpscan uniscan nodejs npm python3-pip tor proxychains
-
+    freetype-dev 
 
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
