@@ -69,6 +69,7 @@ GITHUB_LINK = os.environ.get(
     "O_GITHUB_LINK") or "https://github.com/jokerhacker22/"
 
 GITHUB_REPO = os.environ.get("GITHUB_REPO") or "https://github.com/MrRobot22/"
+GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN")
 
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
@@ -76,6 +77,11 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN")) or False
 DB_URI = os.environ.get("DATABASE_URL") or None
 
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO")
+
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
+HEROKU_MEMEZ = os.environ.get("HEROKU_MEMEZ")
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
 
 if STRING_SESSION:
     bot = TelegramClient(StringSession(str(STRING_SESSION)), API_KEY, API_HASH)
