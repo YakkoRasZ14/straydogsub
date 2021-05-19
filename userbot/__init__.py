@@ -74,7 +74,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN")) or False
-DB_URI = os.environ.get("DB_URI") or None
+DB_URI = os.environ.get("DATABASE_URL") or None
 
 
 if STRING_SESSION:
