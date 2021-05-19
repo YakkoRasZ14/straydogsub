@@ -1,6 +1,10 @@
 FROM alpine:edge
 
-#
+LABEL maintainer="jokerhacker.6521@pm.me"
+LABEL version="0.1"
+LABEL description="This is custom Docker Image for \
+the User Bot"
+
 # We have to uncomment Community repo for some packages
 #
 RUN sed -e 's;^#http\(.*\)/edge/community;http\1/edge/community;g' -i /etc/apk/repositories
@@ -67,9 +71,9 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone https://github.com/MrRobot222/TESLA/ /root/TESLA
-RUN mkdir /root/TESLA/bin/
-WORKDIR /root/TESLA/
+RUN git clone https://github.com/jokerhacker22/straydogsub/ /root/straydogs
+RUN mkdir /root/StrayDogs/bin/
+WORKDIR /root/StrayDogs/
 
 
 #
