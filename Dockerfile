@@ -1,4 +1,4 @@
-FROM Ubuntu:20.4
+FROM ubuntu:20.4
 
 LABEL maintainer="jokerhacker.6521@pm.me"
 LABEL version="0.1"
