@@ -24,7 +24,7 @@ async def _(event):
     await event.edit("------------✈-")
     await event.edit("-------------✈")
     await event.edit("plane is gone, what are you waitin for.")
-    await asyncio.sleep(3)
+    await asyncio.sleep(5)
     await event.delete()
     CMD_HELP.update({
         "plane":

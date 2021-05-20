@@ -1,5 +1,5 @@
 # import necessary modules to work
-from userbot import ALIVE_LOGO, bot, CMD_HELP, ALIVE_NAME, Up_Time, bot_version, GITHUB_REPO, GITHUB_LINK
+from userbot import ALIVE_LOGO, O_GITHUB_LINK, U_GITHUB_LINK, bot, CMD_HELP, ALIVE_NAME, Up_Time, bot_version, GITHUB_REPO
 from userbot.events import register
 from platform import python_version
 from telethon import version
@@ -7,8 +7,6 @@ import time
 
 # Thanks to Thunderuserbot for this code,
 # https://github/Thundergang/Thunderuserbot.
-
-
 def get_readable_time(seconds: int) -> str:
     count = 0
     ping_time = ""
@@ -49,10 +47,14 @@ async def amireallyalive(alive):
         f"**Telethon**: v`{version.__version__}`\n"
         f"**Bot Version 🤖**: v`{bot_version}`\n"
         "=================================\n\n"
-        f"**My Github Link** 🔗: [Github]({GITHUB_LINK})\n"
-        f"**Bot Repo** 🔗: [Repo]({GITHUB_REPO})\n\n"
         f"**Bot Uptime**: `{UpTime}`\n"
+
     )
+
+    if U_GITHUB_LINK:
+        output += f"[Repo]({GITHUB_REPO}) | [My Github]({U_GITHUB_LINK}) | [Creator]({O_GITHUB_LINK}) \n"
+    else:
+        output += f"[Repo]({GITHUB_REPO}) | [My Github]({O_GITHUB_LINK}) "
 
     if ALIVE_LOGO:
         logo = ALIVE_LOGO

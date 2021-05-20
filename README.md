@@ -31,7 +31,7 @@ Deploy to Heroku:
 For installation, deployment and User guide visit [Wiki](https://github.com/jokerhacker22/straydogsub/wiki) Page
 ## Groups and support
 
-If you want new features, or announcements, you can follow our [TESLA](https://t.me/joker_hacker_6521) Group.
+If you want new features, or announcements, you can follow our [Stray DOgs](https://t.me/straydogsub) Group.
 
 
 ## Future Updates Checklist

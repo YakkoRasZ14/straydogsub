@@ -13,7 +13,7 @@
     "repository": "https://github.com/jokerhacker22/straydogsub",
   
     "website": "https://telegram.dog/joker_hacker_6521",
-    "success_url": "https://t.me/joker_hacker_6521",
+    "success_url": "https://t.me/straydogsub",
     "stack": "container",
     "env": {
       "API_KEY": {

@@ -37,7 +37,7 @@ async def _(event):
                     await bot.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\n Gathered by FSociety UB",
+                        caption=f"List of feds {user} has been banned in.\n\n Gathered by Stray Dogs UB",
                     )
                 else:
                     await bot.send_message(event.chat_id, audio.text)
@@ -58,7 +58,7 @@ async def _(event):
             await conv.get_response()
             await conv.send_message("/fedinfo " + sysarg)
             audio = await conv.get_response()
-            await ok.edit(audio.text + "\n\nFederation Details Gathered by FSociety UB")
+            await ok.edit(audio.text + "\n\nFederation Details Gathered by Stray Dogs UB")
         except YouBlockedUserError:
             await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 

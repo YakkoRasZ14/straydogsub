@@ -94,7 +94,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**USERBOT ERROR REPORT**\n"
-                    link = "[PROJECT TESLA](https://t.me/support_tesla)"
+                    link = "[Stray Dogs Support](https://t.me/straydogsub)"
                     text += "If you want to, you can report it"
                     text += f". Head and forward this message to {link}.\n"
                     text += "Nothing is logged except the fact of error and date\n"
@@ -137,8 +137,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.respond(
-                            "`Oh I'm sorry for the inconvenience. \
-                            \n`My UserBot got crashed now, let me check that.`"
+                            "`Oh I'm sorry for the inconvenience."
+                            "\n`My UserBot got crashed now, let me check that.`"
                             "\nThe error logs are stored in the userbot's log chat.`"
                         )
 

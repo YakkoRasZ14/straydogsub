@@ -17,6 +17,6 @@ async def nmap_fun(event):
 CMD_HELP.update({
     "nmap":
     ".nmap <url/ip>\
-    \nUsage: Does a simple port scan on given IP/URL.\
+    \nUsage: Does a simple port scan on given IP/URL .\
     \nExample of a valid IP : `127.0.0.1`"
 })
