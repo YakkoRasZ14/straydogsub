@@ -8,6 +8,7 @@ from pylast import LastFMNetwork, md5
 from distutils.util import strtobool as sb
 from logging import basicConfig, getLogger, INFO, DEBUG
 from sys import version_info
+from platform import uname
 import os
 import time
 
