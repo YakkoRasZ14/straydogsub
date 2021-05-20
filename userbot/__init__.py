@@ -105,8 +105,8 @@ G_DRIVE_AUTH_TOKEN_DATA = os.environ.get("G_DRIVE_AUTH_TOKEN_DATA") or None
 G_DRIVE_FOLDER_ID = os.environ.get("G_DRIVE_FOLDER_ID") or None
 
 UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
-                     or "https://github.com/MrRobot222/TESLA.git")
-UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "devil"
+                     or "https://github.com/jokerhacker22/straydogsub.git")
+UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "Devil"
 
 
 if not os.path.exists("bin"):

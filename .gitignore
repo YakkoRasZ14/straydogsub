@@ -2,3 +2,4 @@ config.env
 *pycache*
 emojis.txt
 bin*
+error.log
