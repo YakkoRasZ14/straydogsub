@@ -9,28 +9,30 @@ from distutils.util import strtobool as sb
 from logging import basicConfig, getLogger, INFO, DEBUG
 from sys import version_info
 from platform import uname
-import os, time
+import os
+import time
 
-#load config file if it exists
+# load config file if it exists
 load_dotenv("config.env")
 
-#Small variables which is used in modules
+# Small variables which is used in modules
 Up_Time = time.time()
 bot_version = "0.1b"
 
-#Get this variable from my.telegram.org
+# Get this variable from my.telegram.org
 API_KEY = os.environ.get("API_KEY") or None
 API_HASH = os.environ.get("API_HASH") or None
 
-#Alive name and logo to be appear in .alive message
-ALIVE_LOGO = os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/a7d9ae50487b75a4fd672.jpg"
+# Alive name and logo to be appear in .alive message
+ALIVE_LOGO = os.environ.get(
+    "ALIVE_LOGO") or "https://telegra.ph/file/a7d9ae50487b75a4fd672.jpg"
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or uname().node
 
-#Turn this on if you want to kick and get a notification about spam Bots
+# Turn this on if you want to kick and get a notification about spam Bots
 ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT") or "False")
 ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
 
-#THe botlog chat id of the group where you want logging to work
+# THe botlog chat id of the group where you want logging to work
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID")) or 0
 BOTLOG = sb(os.environ.get("BOTLOG") or False)
 if BOTLOG:
@@ -55,10 +57,10 @@ else:
         level=INFO)
 LOGS = getLogger(__name__)
 
-#chrome driver location
+# chrome driver location
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER") or None
 
-#config check or config.env or sample_config.env
+# config check or config.env or sample_config.env
 CONFIG_CHECK = os.environ.get("__REMOVE__THIS__LINE__" or None)
 if CONFIG_CHECK:
     LOGS.info(
@@ -66,24 +68,26 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-#postgresql DataBase URL; ex: postgres://username:password@ip/localhost:port/dbname
+# postgresql DataBase URL; ex:
+# postgres://username:password@ip/localhost:port/dbname
 DB_URI = os.environ.get("DATABASE_URL") or None
 
-#Default bio message for .alive module
+# Default bio message for .alive module
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or None
 
-#String_session value generated from strin_session.py
+# String_session value generated from strin_session.py
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
 
-#User Github Link to be shown in .alive module
+# User Github Link to be shown in .alive module
 U_GITHUB_LINK = os.environ.get("U_GITHUB_LINK") or None
 
-#Leave this as empty if you Don't know 
+# Leave this as empty if you Don't know
 O_GITHUB_LINK = os.environ.get(
     "GITHUB_LINK") or "https://github.com/jokerhacker22/"
-GITHUB_REPO = os.environ.get("GITHUB_REPO") or "https://github.com/JokerHacker22/Straydogsub"
+GITHUB_REPO = os.environ.get(
+    "GITHUB_REPO") or "https://github.com/JokerHacker22/Straydogsub"
 
-#Your github access token
+# Your github access token
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN") or None
 
 GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME") or None
@@ -91,10 +95,11 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME") or None
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TEMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
-#Turn this on if you want to Auto ban Whoever PM.
+# Turn this on if you want to Auto ban Whoever PM.
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN")) or False
 
-#These values are needed for heroku and .set module, get this from heroku dashboard
+# These values are needed for heroku and .set module, get this from heroku
+# dashboard
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY") or None
 HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ")) or True
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME") or None
@@ -121,7 +126,8 @@ UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "Devil"
 if not os.path.exists("bin"):
     os.mkdir("bin")
 
-#this if-else statement made to make testing and building easy, no need to download these always when you run the bot
+# this if-else statement made to make testing and building easy, no need
+# to download these always when you run the bot
 if not os.path.exists("../bin"):
     binaries = {
         "https://raw.githubusercontent.com/adekmaulana/megadown/master/megadown": "bin/megadown",

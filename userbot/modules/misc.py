@@ -82,7 +82,7 @@ async def bot_support(wannahelp):
     await wannahelp.edit(
         "\nJoin our Support Group to fix your problems and discuss"
         "\n[Support Group](https://t.me/straydogsub)"
-        )
+    )
 
 
 @register(outgoing=True, pattern="^.creator$")
@@ -147,20 +147,16 @@ async def raw(event):
             caption="`Here's the decoded message data !!`")
 
 
-CMD_HELP.update({
-    "powermenu":
-    ".sleep <seconds> :- Userbots get tired too. Let yours snooze for a few seconds.\n\n"
-    "shutdown :-Usage: Sometimes you need to shut down your bot. Sometimes you just hope to hear Windows XP shutdown sound... but you don't.\n\n"
-    "restart:-Usage: Restarts the bot !!"})
+CMD_HELP.update({"powermenu": ".sleep <seconds> :- Userbots get tired too. Let yours snooze for a few seconds.\n\n"
+                 "shutdown :-Usage: Sometimes you need to shut down your bot. Sometimes you just hope to hear Windows XP shutdown sound... but you don't.\n\n"
+                 "restart:-Usage: Restarts the bot !!"})
 
 CMD_HELP.update({"userbot": ".support :-Usage: If you need help, use this command.\n\n"
-            "community :-Join the awesome Stray Dogs userbot community !!\n\n"
-            "repo:- If you are curious what makes the userbot work, this is what you need.\n\n"
-            "readme:- Provide links to setup the userbot and it's modules.\n\n"
-            "creator:- Know who created this awesome userbot !!\n"})
+                 "community :-Join the awesome Stray Dogs userbot community !!\n\n"
+                 "repo:- If you are curious what makes the userbot work, this is what you need.\n\n"
+                 "readme:- Provide links to setup the userbot and it's modules.\n\n"
+                 "creator:- Know who created this awesome userbot !!\n"})
 
-CMD_HELP.update({
-    "tools":
-    ".random <item1> <item2> ... <itemN>:-Get a random item from the list of items.\n\n"
-    "repeat <no.> <text> :-Usage: Repeats the text for a number of times. Don't confuse this with spam though.\n\n"
-    "raw:- Get detailed JSON-like formatted data about replied message.\n"})
+CMD_HELP.update({"tools": ".random <item1> <item2> ... <itemN>:-Get a random item from the list of items.\n\n"
+                 "repeat <no.> <text> :-Usage: Repeats the text for a number of times. Don't confuse this with spam though.\n\n"
+                 "raw:- Get detailed JSON-like formatted data about replied message.\n"})
