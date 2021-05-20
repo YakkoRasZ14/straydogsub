@@ -58,7 +58,7 @@ ALIVE_LOGO = os.environ.get(
     "ALIVE_LOGO") or "https://telegra.ph/file/a7d9ae50487b75a4fd672.jpg"
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or uname().node
 
-BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID") or 0
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID")) or 0
 
 BOTLOG = sb(os.environ.get("BOTLOG") or False)
 if BOTLOG:
