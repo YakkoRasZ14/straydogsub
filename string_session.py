@@ -13,7 +13,7 @@ with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
         "Hey there here is your String Session\n\n"
         "Generated from Fsociety's Code\n"
         f"<b>String_Session</b> : <code>{session_string}</code>"
-        "Join SUpport group for more info @"
+        "\n\nJoin SUpport group for more info @straydogsub"
 
     )
     client.send_message("me", saved_messages_template, parse_mode="html")

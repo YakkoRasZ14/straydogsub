@@ -13,7 +13,7 @@ import os
 import time
 
 # load config file if it exists
-load_dotenv("config.env")
+load_dotenv(".env")
 
 # Small variables which is used in modules
 Up_Time = time.time()

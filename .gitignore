@@ -3,3 +3,7 @@ config.env
 emojis.txt
 bin*
 error.log
+downloads
+*.session
+env
+*.env*
