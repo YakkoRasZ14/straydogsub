@@ -65,7 +65,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "fedstat": ".fstat <username/userid/reply to user>\nUse - To check fstat of a person.\
+        "fedstat": ".fstat <username/userid/reply to user>\nUse - To check federation status of a person.\
         \n\n.finfo <fedid>\nUse - To gather info about the fed."
     }
 )
