@@ -7,3 +7,5 @@ downloads
 *.session
 env
 *.env*
+
+testing.py
