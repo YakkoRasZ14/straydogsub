@@ -32,7 +32,7 @@ async def _(event):
                     await event.edit(str(e))
                     return
             await event.edit("`Invited Successfully`")
-            await sleep(2)
+            await sleep(4)
             await event.delete()
         else:
             # https://lonamiwebs.github.io/Telethon/methods/channels/invite_to_channel.html
@@ -46,7 +46,7 @@ async def _(event):
                     await event.edit(str(e))
                     return
             await event.edit("`Invited Successfully`")
-            await sleep(2)
+            await sleep(4)
             await event.delete()
 
 CMD_HELP.update({
