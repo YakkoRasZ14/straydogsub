@@ -103,6 +103,7 @@ async def fetch_info(chat, event):
 
     # this is some spaghetti I need to change
     description = chat.full_chat.about
+    logo = chat.full_chat.chat_photo
     members = chat.full_chat.participants_count if hasattr(
         chat.full_chat, "participants_count") else chat_obj_info.participants_count
     admins = chat.full_chat.admins_count if hasattr(
@@ -223,6 +224,7 @@ async def fetch_info(chat, event):
         caption += f"Description: \n<code>{description}</code>\n"
     caption += f"\n\n This info was gathered by {ALIVE_NAME}'s Userbot"
     return caption
+    
 
 CMD_HELP.update({
     "chatinfo":
