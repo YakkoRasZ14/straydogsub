@@ -41,8 +41,7 @@ async def github(event):
                 f"URL: {url}\n"
                 f"Company: `{company}`\n"
                 f"Created at: `{created_at}`\n"
-                f"More info : [Here](https://api.github.com/users/{username}/events/public)\n"
-                f"Avatar URL : {avatar_url} ")
+                f"More info : [Here](https://api.github.com/users/{username}/events/public)\n")
             if not result.get("repos_url", None):
                 return await event.edit(REPLY)
             async with session.get(result.get("repos_url", None)) as request:
@@ -57,12 +56,11 @@ async def github(event):
                 for nr in range(len(result)):
                     REPLY += f"[{result[nr].get('name', None)}]({result[nr].get('html_url', None)})\n"
 
-                if avatar_url:
-                    logo = avatar_url
-                    await bot.send_file(event.chat_id, logo, caption=REPLY)
-                    await event.delete()
-                else:
-                    await event.edit(REPLY)
+                
+                logo = avatar_url
+                await bot.send_file(event.chat_id, file=logo, caption=REPLY, force_document=False, allow_cache=False)
+                await event.delete()
+                
 
 
 @register(outgoing=True, pattern="^.commit(?: |$)(.*)")
