@@ -1,6 +1,6 @@
 <div align="center">Stray Dogs User Bot©</div>
 
-<div align=center><img src="" alt="Logo"></div>
+<div align=center><img src="https://telegra.ph/file/5a1dd46f3788f9a5866d5.jpg" alt="Logo"></div>
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
@@ -26,7 +26,7 @@
 Deploy to Heroku:
 <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/jokerhacker22/straydogsub"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
-# Wiki 
+# Wiki
 
 For installation, deployment and User guide visit [Wiki](https://github.com/jokerhacker22/straydogsub/wiki) Page
 ## Groups and support
@@ -46,7 +46,7 @@ If you want new features, or announcements, you can follow our [Stray DOgs](http
 
 ## Credits
 
-Thanks for all : 
+Thanks for all :
 * [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 * [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
 * [kandnub](https://github.com/kandnub) - TG-UserBot
