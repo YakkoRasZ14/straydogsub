@@ -58,7 +58,7 @@ RUN apk add --no-cache=true --update \
     zip \
     megatools \
     nodejs \
-    freetype-dev 
+    freetype-dev
 
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
@@ -71,7 +71,7 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone https://github.com/jokerhacker22/straydogsub/ /root/straydogs
+RUN git clone -b Devil https://github.com/jokerhacker22/straydogsub/ /root/straydogs
 RUN mkdir /root/straydogs/bin/
 WORKDIR /root/straydogs/
 
