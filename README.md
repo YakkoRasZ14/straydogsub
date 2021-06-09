@@ -1,6 +1,6 @@
 <div align="center">Stray Dogs User Bot©</div>
 
-<div align=center><img src="https://telegra.ph/file/5a1dd46f3788f9a5866d5.jpg" alt="Logo"></div>
+![Logo](https://telegra.ph/file/5a1dd46f3788f9a5866d5.jpg)
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
