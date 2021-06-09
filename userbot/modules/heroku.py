@@ -81,7 +81,7 @@ async def variable(var):
         await var.edit("`Deleting information...`")
         variable = var.pattern_match.group(2)
         if variable == '':
-            await var.edit("`Specify ConfigVars you want to del...`")
+            await var.edit("`Specify ConfigVars which you want to del...`")
             return False
         if variable in heroku_var:
             if BOTLOG:
