@@ -5,9 +5,6 @@ from platform import python_version
 from telethon import version
 import time
 
-# Thanks to Thunderuserbot for this code,
-# https://github/Thundergang/Thunderuserbot.
-
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -42,21 +39,23 @@ async def amireallyalive(alive):
     # This is to make sure .alive command works perfectly
     UpTime = get_readable_time((time.time() - Up_Time))
     output = (
-        f"**✨ Hey there I'm `{ALIVE_NAME}` ✨**\n"
-        "`No system is Safe!`\n"
-        "\n===============================\n"
-        f"**Python 🐍**: v`{python_version()}`\n"
-        f"**Telethon**: v`{version.__version__}`\n"
-        f"**Bot Version 🤖**: v`{bot_version}`\n"
-        "=================================\n\n"
-        f"**Bot Uptime**: `{UpTime}`\n"
+        f"""
+        \t ✨**Hello There i'm {ALIVE_NAME}**✨ \
+        \n `No system is Safe!` \
+        \n\n  I'm a modular telegram userbot made for my master. \
+        \n\n Python 🐍 : v`{python_version()}` \
+        \n Telethon  : v`{version.__version__}` \
+        \n Bot version 🤖 : v`{bot_version}` \
+        \n\n Bot Uptime : {UpTime}
+        \n\n `type .help to know about available modules`
+        """
 
     )
 
     if U_GITHUB_LINK:
         output += f"[Repo]({GITHUB_REPO}) | [My Github]({U_GITHUB_LINK}) | [Creator]({O_GITHUB_LINK}) \n"
     else:
-        output += f"[Repo]({GITHUB_REPO}) | [My Github]({O_GITHUB_LINK}) "
+        output += f"[Repo]({GITHUB_REPO}) | [Creator]({O_GITHUB_LINK}) "
 
     if ALIVE_LOGO:
         logo = ALIVE_LOGO
