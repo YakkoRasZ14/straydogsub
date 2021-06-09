@@ -69,7 +69,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Invalid Heroku credentials for deploying userbot dyno.`'
+                f'{txt}\n`Invalid Heroku App name for deploying userbot dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
