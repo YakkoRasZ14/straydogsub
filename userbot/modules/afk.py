@@ -22,7 +22,13 @@ AFKSTR = [
     "Would ya spend your time with someone",
     "My god, i don't know how to respond you right now, so i'll text you later",
     "Don't you have any other work to do?",
-    "Keep your A$$ shut while i'm afk"]
+    "I should've never done this, so wait for my master",
+    "you should talk to yourself while I'm AFK!",
+    "How many time's should i tell you to wait until my master come's",
+    "Hang in there I'm just went to Mars",
+    "You better wait until next week, so i can ignore you again.",
+    "Come on man I have to sleep now, dattebayo"
+    ]
 
 global USER_AFK
 global afk_time
