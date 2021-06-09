@@ -127,7 +127,6 @@ async def pipcheck(pip):
             await pip.edit("`Use .help pip to see an example`")
 
 
-
 CMD_HELP.update(
     {"sysd": ".sysd\
     \nUsage: Shows system information using neofetch."})
@@ -136,4 +135,3 @@ CMD_HELP.update({"botver": ".botver\
 CMD_HELP.update(
     {"pip": ".pip <module(s)>\
     \nUsage: Does a search of pip modules(s)."})
-
