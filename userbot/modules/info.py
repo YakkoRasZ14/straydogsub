@@ -1,13 +1,12 @@
 """
-Code created by Joker Hacker for Stray Dogs UB, 
+Code created by Joker Hacker for Stray Dogs UB,
 Son please take care of your mom if you try to steal or copy the code
 thanks to @tgscanrobot from telegram for such a wonderful bot
 """
 
 
-import asyncio
-import re, os
-from typing import Pattern
+import re
+import os
 from userbot import bot, CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
 from telethon.errors import YouBlockedUserError
@@ -15,10 +14,12 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
-##dinfo(detailed user info) module starts from here
+# dinfo(detailed user info) module starts from here
 conver = "@tgscanrobot"
 unknown = "This human is not in my database."
 slow = "Whoa! Slow down,"
+
+
 @register(outgoing=True, pattern="^.dinfo ?(.*)")
 async def _(event):
     if event.fwd_from:
@@ -37,22 +38,31 @@ async def _(event):
             await conv.send_message(username)
             response = await conv.get_response()
             if unknown in response.text:
-                ##If the user is not in tgscanrobot database, then inform the user
+                # If the user is not in tgscanrobot database, then inform the
+                # user
                 await event.edit("`Oops sorry I can not parse this user now`")
             elif slow in response.text:
-                #If the bot says to wait and try again.
+                # If the bot says to wait and try again.
                 await event.edit("`Uh man just be slow and try again...`")
             else:
-                ##Using re to replace some words in response.txt
-                response1 = re.sub(r"Human found!","**Hey I found your leaked info!**", response.text, count=1)
-                response2 = re.sub(r"Telegram ID","**ID**", response1, count=1)
-                response3 = re.sub(r"Name","**Skid Name**", response2, count=1)
+                # Using re to replace some words in response.txt
+                response1 = re.sub(
+                    r"Human found!",
+                    "**Hey I found your leaked info!**",
+                    response.text,
+                    count=1)
+                response2 = re.sub(
+                    r"Telegram ID", "**ID**", response1, count=1)
+                response3 = re.sub(
+                    r"Name", "**Skid Name**", response2, count=1)
                 response3 += "\n\n\t `This info was gathered using Stray Dogs UB.`"
                 await event.edit(response3)
         except YouBlockedUserError:
             await event.edit("**Error**\n It seems you have block the bot(TgScanRobot),\n Man unblock it already.")
 
-##uinfo(user info) module starts from here
+# uinfo(user info) module starts from here
+
+
 @register(outgoing=True, pattern="^.uinfo ?(.*)")
 async def who(event):
     """ For .info command, get info about a user. """
@@ -111,7 +121,9 @@ async def get_user(event):
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
 
-            if isinstance(probable_user_mention_entity, MessageEntityMentionName):
+            if isinstance(
+                    probable_user_mention_entity,
+                    MessageEntityMentionName):
                 user_id = probable_user_mention_entity.user_id
                 replied_user = await event.client(GetFullUserRequest(user_id))
                 return replied_user
@@ -179,7 +191,6 @@ async def fetch_info(replied_user, event):
             """
 
     return caption
-
 
 
 CMD_HELP.update({

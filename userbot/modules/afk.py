@@ -27,8 +27,7 @@ AFKSTR = [
     "How many time's should i tell you to wait until my master come's",
     "Hang in there I'm just went to Mars",
     "You better wait until next week, so i can ignore you again.",
-    "Come on man I have to sleep now, dattebayo"
-    ]
+    "Come on man I have to sleep now, dattebayo"]
 
 global USER_AFK
 global afk_time

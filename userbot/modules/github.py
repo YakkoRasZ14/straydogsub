@@ -56,11 +56,9 @@ async def github(event):
                 for nr in range(len(result)):
                     REPLY += f"[{result[nr].get('name', None)}]({result[nr].get('html_url', None)})\n"
 
-                
                 logo = avatar_url
                 await bot.send_file(event.chat_id, file=logo, caption=REPLY, force_document=False, allow_cache=False)
                 await event.delete()
-                
 
 
 @register(outgoing=True, pattern="^.commit(?: |$)(.*)")

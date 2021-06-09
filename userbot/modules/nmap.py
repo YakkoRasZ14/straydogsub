@@ -16,10 +16,10 @@ async def nmap_fun(event):
             result += '----------'
             result += 'Protocol : %s' % proto
 
-            lport = nm[host][proto].keys()
-            lport.sort()
+            lport = sorted(nm[host][proto].keys())
             for port in lport:
-                result += ('port : %s\tstate : %s' % (port, nm[host][proto][port]['state']))
+                result += ('port : %s\tstate : %s' %
+                           (port, nm[host][proto][port]['state']))
                 await event.edit(result)
 
 CMD_HELP.update({
