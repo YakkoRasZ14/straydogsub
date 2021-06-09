@@ -71,9 +71,8 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.community$")
 async def bot_community(community):
-    """ For .community command, just returns OG Paperplane's group link. """
     await community.edit(
-        "\nJoin the Stray Dogs Community to learn and resolve your problems")
+        "\nJoin the Stray [Dogs Community](https://t.me/straydogsub) to learn and resolve your problems")
 
 
 @register(outgoing=True, pattern="^.support$")
