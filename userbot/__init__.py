@@ -17,7 +17,7 @@ load_dotenv(".env")
 
 # Small variables which is used in modules
 Up_Time = time.time()
-bot_version = "0.1b"
+bot_version = "1.01"
 
 # Get this variable from my.telegram.org
 API_KEY = os.environ.get("API_KEY") or None
