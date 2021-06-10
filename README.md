@@ -6,6 +6,12 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
+[![PyLint](https://github.com/jokerhacker22/straydogsub/actions/workflows/pylint.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/pylint.yml)
+
+[![CodeQL](https://github.com/jokerhacker22/straydogsub/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/codeql-analysis.yml)
+
+[![FailedChecker](https://github.com/jokerhacker22/straydogsub/actions/workflows/Pythonapp.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/Pythonapp.yml)
+
 ```
 #include <std/disclaimer.h>
 /**
@@ -23,10 +29,10 @@
 ```
 
 
-Deploy to Heroku:
+## Deploy to Heroku:
 <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/jokerhacker22/straydogsub"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
-# Wiki
+## Wiki
 
 For installation, deployment and User guide visit [Wiki](https://github.com/jokerhacker22/straydogsub/wiki) Page
 ## Groups and support
@@ -36,11 +42,11 @@ If you want new features, or announcements, you can follow our [Stray DOgs](http
 
 ## Future Updates Checklist
 
-- [ ] Nmap module
+- [x] Nmap module
 - [ ] github.io
 - [ ] Wiki
 - [ ] Youtube Tutorial
-- [ ] Github user Avatar in .github
+- [x] Github user Avatar in .github
 - [ ] More Hacking Tools
 
 
@@ -57,4 +63,4 @@ Thanks for all :
 * [ElytrA8](https://github.com/ElytrA8) - TESLA
 
 I can't mention everyone here, there a lot of guys behind this work and I thank everyone.
-## License
+
