@@ -41,6 +41,7 @@ else:
     LOGSPAMMER = False
 
 BIO_PREFIX = os.environ.get("BIO_PREFIX") or None
+QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN") or None
 
 # Setting up bot log things
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get(
