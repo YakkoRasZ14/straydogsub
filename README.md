@@ -30,7 +30,7 @@
 
 
 ## Deploy to Heroku:
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/jokerhacker22/straydogsub"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/YakkoRasZ14/straydogsub"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
 ## Wiki
 
