@@ -6,11 +6,11 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
-[![PyLint](https://github.com/jokerhacker22/straydogsub/actions/workflows/pylint.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/pylint.yml)
+[![PyLint](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/pylint.yml/badge.svg)](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/pylint.yml)
 
-[![CodeQL](https://github.com/jokerhacker22/straydogsub/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/codeql-analysis.yml)
 
-[![FailedChecker](https://github.com/jokerhacker22/straydogsub/actions/workflows/Pythonapp.yml/badge.svg)](https://github.com/jokerhacker22/straydogsub/actions/workflows/Pythonapp.yml)
+[![FailedChecker](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/Pythonapp.yml/badge.svg)](https://github.com/YakkoRasZ14/straydogsub/actions/workflows/Pythonapp.yml)
 
 ```
 #include <std/disclaimer.h>
@@ -37,7 +37,7 @@
 For installation, deployment and User guide visit [Wiki](https://github.com/jokerhacker22/straydogsub/wiki) Page
 ## Groups and support
 
-If you want new features, or announcements, you can follow our [Stray DOgs](https://t.me/straydogsub) Group.
+If you want new features, or announcements, you can follow our [Stray DOgs](https://t.me/YakkoSupportGroup) Group.
 
 
 ## Future Updates Checklist
