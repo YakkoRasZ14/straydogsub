@@ -10,10 +10,10 @@
       "productivity"
     ],
     
-    "repository": "https://github.com/jokerhacker22/straydogsub",
+    "repository": "https://github.com/YakkoRasZ14/straydogsub",
   
-    "website": "https://telegram.dog/joker_hacker_6521",
-    "success_url": "https://t.me/straydogsub",
+    "website": "https://telegram.dog/YakkoRasZ14",
+    "success_url": "https://t.me/YakkoRasZ74",
     "stack": "container",
     "env": {
       "API_KEY": {
